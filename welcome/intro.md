@@ -1,31 +1,26 @@
-Welcome to PEARC19 Tutorial
+Welcome to TACC Summer Institute 2020 Tutorial
 ===
 
-### Fill out the demographic information
-
-Please fill out this survey, all results are gathered anonymously 
-
-http://bit.ly/pearc19tapis 
 
 ### Join Slack
 
-Please join the TACC Cloud Slack:
+Please join the [TACC Institute SLACK CHANNEL](https://app.slack.com/client/T015E2VMTLH/C015RUFEYBH). 
 
-http://bit.ly/join-tapis 
+Join the channel **#reproducible_science**
 
-Join the channel #pearc19
 
 ### Access Information
+Before getting started, you need to have the following:
 
-You should have received a handout with access information. It will have two main sections: 
+* A TACC Account
 
-1. Access information for the Jupyter portion
+* SSH access to the Stampede 2 compute cluster and an allocation.
 
-2. Authentication for the Tapis portion of the training 
- 
-By accessing these services you agree to abide by the TACC Usage Policy. For more information about the policy go here: https://portal.tacc.utexas.edu/tacc-usage-policy
- 
-### Fill out & turn in attendee form
 
-Please fill out the attendee form with your information, we will not use this information without your consent and we will not share or distribute your information. 
+### Questions?
+
+Need help? Please ask your questions on [TACC Institute SLACK CHANNEL](https://app.slack.com/client/T015E2VMTLH/C015RUFEYBH). 
+
+
+
 
