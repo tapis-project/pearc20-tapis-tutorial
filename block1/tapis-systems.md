@@ -5,7 +5,7 @@ The Tapis API provides a way to access and manage the data storage and compute r
 
 ### Tapis Storage Systems
 
-Storage systems tell Tapis where data resides.  You can store files for running compute jobs, archive results, share files with collaborators, and maintain copies of your Tapis apps on storage systems.  Tapis supports many of the communication protocols and  permissions models that go along with them, so you can work privately, collaborate with individuals, or provide an open community resource.  It's up to you.  Here is an example of a simple data storage system template accessed via SFTP for the TACC cloud storage system on Stampede2:
+Storage systems tells Tapis where data resides.  You can store files for running compute jobs, archive results, share files with collaborators, and maintain copies of your Tapis apps on storage systems.  Tapis supports many of the communication protocols and  permissions models that go along with them, so you can work privately, collaborate with individuals, or provide an open community resource.  It's up to you.  Here is an example of a simple data storage system template accessed via SFTP for the TACC cloud storage system on Stampede2:
 
 ```json
 {
@@ -22,7 +22,7 @@ Storage systems tell Tapis where data resides.  You can store files for running 
     "port": 22,
     "protocol": "SFTP",
     "rootDir": "/",
-    "homeDir": "/work/dir../UPDATEUSERNAME/stampede2",
+    "homeDir": "/work/0003/UPDATEUSERNAME/stampede2/",
     "auth": {
       "username": "UPDATEUSERNAME",
       "publicKey":"paste public key here",
@@ -52,7 +52,13 @@ More details on the possible parameters for storage systems can be found in the 
 ## Hands-on Exercises
 
 ### Keys retrival
-Before you start working on the storage system definition please make sure that your public key is placed in the authorized keys file on Stampede2. <br/>
+Before you start working on the storage system definition, please make sure to generate SSH Key pair on the virtual machine assigned to you. Create a .ssh directory in your home directory and run the command below:
+
+```
+ssh-keygen -m PEM -f id_rsa
+
+```
+Do not ennter passphrase. Once the keys are created copy the public key to authorized keys file on Stampede2. <br/>
 Keep the public key and private key handy, these are required for crafting the system definition. For private key, it is recommended to get a one liner private key using the command below. 
 
 ```

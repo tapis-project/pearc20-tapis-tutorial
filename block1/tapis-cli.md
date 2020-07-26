@@ -11,8 +11,7 @@ Initial Requirements
 ===============================================
 
 Before getting started, you need to have the following:
-* A TACC Account
-* Docker installed on your local computer
+* TACC training accounts
 * Familiarity with [working at the command line](http://www.gnu.org/software/bash/manual/bashref.html#Introduction)
 
 Any questions?  Join the [TACC Institute SLACK CHANNEL](https://app.slack.com/client/T015E2VMTLH/C015RUFEYBH) and ask away.
@@ -110,7 +109,7 @@ Do you consent to this reporting? [Y/n]: Y
 ```
 After answering the yes or no questions, you should see `Enter a tenant name`.
 
-We will be using the `portals` tenant, so type that as the tenant name and press enter. 
+We will be using the `tacc.prod` tenant, so type that as the tenant name and press enter. 
 
 ```
 +---------------+--------------------------------------+----------------------------------------+
@@ -129,7 +128,7 @@ We will be using the `portals` tenant, so type that as the tenant name and press
 |   tacc.prod   |                 TACC                 |      https://api.tacc.utexas.edu/      |
 | vdjserver.org |              VDJ Server              | https://vdj-agave-api.tacc.utexas.edu/ |
 +---------------+--------------------------------------+----------------------------------------+
-Enter a tenant name [tacc.prod]: portals
+Enter a tenant name [tacc.prod]: tacc.prod
 tacc.prod username: your_tacc_username
 tacc.prod password for your_tacc_username: [PASSWORD]
 
@@ -147,24 +146,7 @@ Learn about github.com personal access tokens:
 https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line
 Git Token: n/a
 Git Namespace [n/a]: n/a
-+--------------------+--------------------------------------+
-| Field              | Value                                |
-+--------------------+--------------------------------------+
-| tenant_id          | portals                              |
-| username           | your_tacc_username                   |
-| client_name        | _cli-portals-username-a6fb810bd43e   |
-| api_key            | 0fvGYkdummypTsVASlpBdummy48a         |
-| access_token       | 1234345636b1106698f581erhfg4d3a8     |
-| expires_at         | Mon Jul 13 21:19:26 2020             |
-| verify             | True                                 |
-| registry_url       | https://index.docker.io              |
-| registry_username  | n/a                                  |
-| registry_password  | n*a                                  |
-| registry_namespace | n/a                                  |
-| git_username       | n/a                                  |
-| git_token          | n*a                                  |
-| git_namespace      | n/a                                  |
-+--------------------+--------------------------------------+
+
 ```
 
 Behold the glorious box that is your initialized API client!
@@ -175,16 +157,16 @@ Run ```tapis auth show``` to see your newly minted client's access token and ref
 
 ```
 tapis auth show
-+---------------+----------------------------------+
-| Field         | Value                            |
-+---------------+----------------------------------+
-| tenant_id     | portals                          |
-| username      | your_tacc_username               |
-| api_key       | 0fvGYkdummypTsVASlpBdummy48a     |
-| access_token  | 1234345636b1106698f581erhfg4d3a8 |
-| expires_at    | Mon Jul 13 21:19:26 2020         |
-| refresh_token | 938fb1c860a97f5bjd7239532eef4e5d |
-+---------------+----------------------------------+
++---------------+---------------------------------+
+| Field         | Value                           |
++---------------+---------------------------------+
+| tenant_id     | tacc.prod                       |
+| username      | trainXXX                        |
+| api_key       | tPfolY_m7FPFtcFJCzuf9PXO8_Aa    |
+| access_token  | 32811fXXXXXXXXXX35b2f1cde15d8b1 |
+| expires_at    | Sun Jul 26 20:36:43 2020        |
+| refresh_token | 6ac717bXXXXXXXXXXXXX91d46ab7ae  |
++---------------+---------------------------------+
 ```
 
 
@@ -195,7 +177,7 @@ To see a list of all your systems:
 | id                                | name                                            | type      | default |
 +-----------------------------------+-------------------------------------------------+-----------+---------+
 | your_pre_existing_system_1        | My pre-existing system                          | EXECUTION | False   |
-| your_pre_existing_system_2        | Another pre-existing system                     | EXECUTION | False   |
+| public_system_1                   | Publicly available system                       | STORAGE   | True    |
 +-----------------------------------+-------------------------------------------------+-----------+---------+
 ```
 

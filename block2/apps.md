@@ -87,7 +87,7 @@ In order to run your application, you will need to create a wrapper template tha
 * Create a file wrapper.sh in the deployment folder (on Stampede2) and copy the script below into the wrapper.sh 
 
 ```
-#/bin/bash
+#!/bin/bash
 module load tacc-singularity/3.4.2
 
 singularity run /work/05278/ajamthe/stampede2/public/gateways19-classifier.simg  python /classify_image.py ${imagefile} ${predictions} > predictions.txt
@@ -112,9 +112,11 @@ cd ../ && bash wrapper.sh
 
 ## Step 6: Modify app.json in the CLI
 This is a templated app json file. By default, it will grab the app name, version, executionSystem, deploymentSystem, and other parameters from your project.ini. Copy the app.json from [here](./templates/app.json) and paste in your app.json and make following changes:
-* Change the value of deploymentPath to one obtained in Step 2
+* Change the app name to something relevant
+* Change the value of deploymentPath to one obtained in Step 3
 * Change the values of deploymentSystem to your storage system
 * Change the value of executionSystem to your execution system
+
 
 ### Application Metadata
 An example Tapis App JSON definition:
@@ -128,8 +130,8 @@ An example Tapis App JSON definition:
   "deploymentPath": "replace with deployment path",
   "deploymentSystem": "replace with storage system name",
   "helpURI": "",
-  "label": " app.label",
-  "shortDescription": "app.description",
+  "label": " classifier",
+  "shortDescription": "Image classifier app",
   "longDescription": "",
   "modules": [
     "load tacc-singularity/3.4.2"
@@ -139,7 +141,7 @@ An example Tapis App JSON definition:
   "tags": [],
   "templatePath": "wrapper.sh",
   "testPath": "tester.sh",
-  "version": "app.version",
+  "version": "0.0.1",
   "defaultMaxRunTime": "00:30:00",
   "inputs": [],
   "parameters": [

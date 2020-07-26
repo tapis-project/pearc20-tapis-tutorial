@@ -1,27 +1,28 @@
-## TACC Summer Institute: Tapis Day
+## PEARC20: Leveraging Tapis For Portable, Reproducible High Performance Computing In the Cloud Tutorial
 
 ## Welcome and Background
 * [Welcome](./welcome/intro.md)
 
 ## Schedule
 
-* 10:00AM - Welcome
-* 10:15AM - Tapis Introduction
-* 10:30AM - Introduction to Tapis CLI
-* 11:30AM - Lunch
-* 12:00PM - Registering Tapis Systems
-* 1:30PM  - Break
-* 2:00PM  - Registering Tapis Apps
-* 2:30PM  - Launching Tapis Jobs
-* 3:15PM  - Workshop Wrap-up, Q/A
+* 1:00PM - Welcome
+* 1:15PM - Tapis Introduction
+* 1:45PM - Introduction to Tapis CLI
+* 2:15PM - Registering Tapis Systems
+* 3:00PM - Break
+* 3:30PM  - Registering Tapis Systems contd
+* 3:45PM  - Registering Tapis Apps
+* 4:30PM  - Launching Tapis Jobs
+* 4:45PM  - Workshop Wrap-up, Q/A
 
 ## Workshop Introduction
 Presenters: 
-* Joe Stubbs (TACC)
-* Anagha Jamthe (TACC)
+* Charlie Dey (TACC)
+* Steve Black (TACC)
 * Julia Looney (TACC)
-* Elias Chalhoub (TACC)
-* Christain Garcia (TACC)
+* Anagha Jamthe (TACC)
+* Mike Packard (TACC)
+* Jason Allison (TACC)
 
 
 ## Intro to Tapis 
