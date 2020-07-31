@@ -5,7 +5,7 @@ The following instructions will guide you through setting up Tapis CLI (command 
 
 The Tapis CLI commands all respond with help for -h and return back information on the parameters that can be passed.  
 
-Need help?  Ask your questions using the [TACC-Learn Slack Channel](https://app.slack.com/client/T017118RQ68/C0185D59JKB) on pearc2020_tapis_tutorial channel
+Need help?  Ask your questions using the [TACC-Learn Slack Channel](https://join.slack.com/t/tacc-learn/shared_invite/zt-g1bhp7z4-fi2oQEVXMoH2K6yrvPS4_Q) on pearc2020_tapis_tutorial channel
 
 Initial Requirements
 ===============================================
